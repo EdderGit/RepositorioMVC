@@ -10,6 +10,14 @@ namespace Aplicacion.Paralelismo
     {
         static void Main(string[] args)
         {
+            var taskA = new Task( () => Console.WriteLine("Ejecutando desde la TaskA"));
+
+            taskA.Start();
+
+            Console.WriteLine("Lalamada del hijo principal");
+
+            Console.ReadKey();
+
         }
     }
 }
