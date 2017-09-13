@@ -34,7 +34,7 @@ namespace Aplicacion.Paralelismo
 
         static void MetodoProceso( int i )
         {
-            for (int j = 0; j < 100000; j++)
+            for (int j = 0; j < 100; j++)
             {
                 double d = 45345/6546*7989/0.2254;
             }
