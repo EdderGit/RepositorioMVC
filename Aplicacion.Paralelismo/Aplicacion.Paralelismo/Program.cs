@@ -11,13 +11,7 @@ namespace Aplicacion.Paralelismo
         static void Main(string[] args)
         {
 
-            var taskA = new Task( () => Console.WriteLine("Ejecutando desde la TaskA"));
-
-            taskA.Start();
-
-            Console.WriteLine("Lalamada del hijo principal");
-
-            Console.ReadKey();
+            MetodoTarea1();
 
             DateTime dtInicio = DateTime.Now;
 
@@ -44,6 +38,18 @@ namespace Aplicacion.Paralelismo
             {
                 double d = 45345/6546*7989/0.2254;
             }
+        }
+
+
+        static void MetodoTarea1()
+        {
+            var taskA = new Task(() => Console.WriteLine("Ejecutando desde la TaskA"));
+
+            taskA.Start();
+
+            Console.WriteLine("Lalamada del hijo principal");
+
+            Console.ReadKey();
         }
     }
 }
