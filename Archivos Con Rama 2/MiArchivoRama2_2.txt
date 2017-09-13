@@ -1,3 +1,0 @@
-Este es mi archivo de variables
-
-var g = 0;
